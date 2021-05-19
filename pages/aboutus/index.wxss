@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main .row {
+  flex: 1;
+  font-size: 35rpx;
+  color: gray;
+}

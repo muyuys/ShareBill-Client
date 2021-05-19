@@ -1,0 +1,19 @@
+<view class="certified" wx:if="{{isCertified==true}}">
+    <view class="introduction">您已经认证了,贵校为:</view>
+    <view class="school">
+        <view class="content">{{school}}</view>
+    </view>
+</view>
+<view wx:else class="not_certificate">
+    <view class="xuexin_url"></view>
+    <view class="verify">
+        <view class="label">
+            验证码
+            <span class='red_star'>*</span>
+        </view>
+        <view class="form-common-style">
+            <input bindinput="codeEventFunc" class="code" type="text" placeholder="使用学信网在线报告验证码进行认证"></input>
+        </view>
+    </view>
+    <button bindtap="verify">认证</button>
+</view>

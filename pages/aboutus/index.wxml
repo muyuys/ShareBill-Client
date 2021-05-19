@@ -1,0 +1,10 @@
+<view class="main">
+    <view class="codeing row">
+        程序：牧鱼
+    </view>
+    <view class="designer row">
+        设计：牧鱼
+    </view>
+    <view class="end row">——————————————</view>
+</view>
+

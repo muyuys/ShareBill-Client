@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Tabs": "../../components/Tabs/tabs",
+    "UpImg":"../../components/UpImg/UpImg"
+  },
+  "navigationBarTitleText": "举报"
+}

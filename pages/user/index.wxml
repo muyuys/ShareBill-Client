@@ -1,0 +1,66 @@
+<view class="user_info_wrap">
+    <view class="user_img_wrap">
+        <view class="user_bg">
+            <open-data type="userAvatarUrl" lang="en" />
+        </view>
+        <view class="user_info">
+            <view class="user_icon">
+                <open-data type="userAvatarUrl" lang="en" />
+            </view>
+            <view class="user_name">
+                <open-data type="userNickName" lang="en" />
+            </view>
+        </view>
+    </view>
+    <!-- <view wx:else class="user_btn">
+        <navigator url="/pages/login/index">登录</navigator>
+    </view> -->
+</view>
+<view class="user_content">
+    <view class="user_main">
+        <!-- 我的订单 -->
+        <view class="orders_wrap">
+            <view class="orders_title">我的订单</view>
+            <view class="order_content">
+                <navigator url="/pages/order/index?type=1">
+                    <view class="iconfont icon-quanbu"></view>
+                    <view class="order_name">全部订单</view>
+                </navigator>
+                <navigator url="/pages/order/index?type=2">
+                    <view class="iconfont icon-jinxingzhong"></view>
+                    <view class="order_name">进行中的订单</view>
+                </navigator>
+                <navigator url="/pages/order/index?type=3">
+                    <view class="iconfont icon-wancheng"></view>
+                    <view class="order_name">完成的订单</view>
+                </navigator>
+                <navigator url="/pages/order/index?type=4">
+                    <view class="iconfont icon-yiguoqi"></view>
+                    <view class="order_name">过期的订单</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="other_info_wrap">
+            <navigator class="info_row" url="/pages/degree_certificate/index">
+                <view class="iconfont icon-xueli"></view>
+                <view class="info_name">学历认证</view>
+            </navigator>
+            <navigator class="info_row" url="/pages/setuser/index">
+                <view class="iconfont icon-lianxi1"></view>
+                <view class="info_name">联系方式</view>
+            </navigator>
+            <navigator class="info_row" url="/pages/order/index?type=5">
+                <view class="iconfont icon-shoucang1"></view>
+                <view class="info_name">收藏的订单</view>
+            </navigator>
+            <button class="info_row" open-type="feedback">
+                <view class="iconfont icon-fankui"></view>
+                <view class="info_name">意见反馈</view>
+            </button>
+            <navigator class="info_row" url="/pages/aboutus/index">
+                <view class="iconfont icon-women"></view>
+                <view class="info_name">关于我们</view>
+            </navigator>
+        </view>
+    </view>
+</view>

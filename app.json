@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/release/index",
+    "pages/expand/index",
+    "pages/user/index",
+    "pages/order_detail/index",
+    "pages/order/index",
+    "pages/carpooling/index",
+    "pages/search/index",
+    "pages/login/index",
+    "pages/feedback/index",
+    "pages/setuser/index",
+    "pages/aboutus/index",
+    "pages/degree_certificate/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00adb5",
+    "navigationBarTitleText": "晓拼",
+    "navigationBarTextStyle": "black"
+
+  },
+  "tabBar": {
+    "backgroundColor": "#eeeeee",
+    "color": "#222831",
+    "selectedColor": "#00adb5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/release/index",
+        "text": "发布",
+        "iconPath": "icons/release.png",
+        "selectedIconPath": "icons/release-o.png"
+      },
+      {
+        "pagePath": "pages/expand/index",
+        "text": "拓展功能",
+        "iconPath": "icons/expand.png",
+        "selectedIconPath": "icons/expand-o.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my-o.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

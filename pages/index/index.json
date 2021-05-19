@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "SearchInput": "../../components/Search/search-input",
+    "Tabs":"../../components/Tabs/tabs"
+  },
+  "navigationBarTitleText": "晓拼",
+  "enablePullDownRefresh": true,
+
+  "backgroundTextStyle": "dark"
+}

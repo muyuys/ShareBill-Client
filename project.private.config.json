@@ -1,0 +1,78 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "发布",
+          "pathName": "pages/release/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "拓展功能",
+          "pathName": "pages/expand/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单详情",
+          "pathName": "pages/order_detail/index",
+          "query": "order_id=1620617119262809557",
+          "scene": null
+        },
+        {
+          "name": "设置学校和联系方式",
+          "pathName": "pages/setuser/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的订单",
+          "pathName": "pages/order/index",
+          "query": "type=1",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "认证",
+          "pathName": "pages/degree_certificate/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "举报",
+          "pathName": "pages/feedback/index",
+          "query": "order_id=001",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.certified {
+  margin-top: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.certified .introduction {
+  padding-bottom: 5px;
+  font-size: 35rpx;
+  letter-spacing: 3rpx;
+  color: var(--themeColor2);
+}
+.certified .school {
+  font-size: 40rpx;
+  font-family: 楷体;
+  text-align: center;
+}
+.certified .school .content {
+  display: inline-block;
+  /*子元素文字会继承居中，因此要在上面写上向左边居中*/
+  text-align: left;
+}
+.not_certificate .verify {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  margin-top: 30vh;
+  margin-bottom: 5vh;
+  display: flex;
+}
+.not_certificate .verify .label {
+  flex: 1;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.not_certificate .verify .label .red_star {
+  color: red;
+  font-size: 34rpx;
+}
+.not_certificate .verify .form-common-style {
+  flex: 3;
+  box-sizing: border-box;
+  width: 90vw;
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  border: solid 2rpx #999;
+  border-radius: 10rpx;
+  box-shadow: 0 0 2rpx #888;
+}
+.not_certificate .verify .form-common-style input {
+  padding-left: 5px;
+  width: 100%;
+}
+.not_certificate button {
+  padding: 5rpx;
+  background-color: var(--themeColor2);
+  font-size: 15px;
+  border-radius: 50px;
+  color: var(--themeColor3);
+}

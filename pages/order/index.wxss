@@ -1,0 +1,10 @@
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #666;
+}
+.order_main .order_item .item_row {
+  display: flex;
+  padding: 10rpx 0;
+  justify-content: space-between;
+}

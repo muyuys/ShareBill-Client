@@ -1,0 +1,34 @@
+.tabs {
+  .tabs_title {
+    display: flex;
+    padding: 15rpx 0;
+    background-color: white;
+    .title_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      color:var(--textUnselectedColor);
+    }
+    .active {
+      color: var(--themeColor1);
+      display: flex;
+      flex-direction: column;
+      .value{
+
+      }
+      .my-border-bottom{
+        height: 6rpx;
+        width: 25%;
+        background-color: var(--themeColor2);
+        border-radius: 3rpx;
+      }
+    }
+  }
+  .tabs_content {
+
+    border-top-left-radius: 55rpx;
+    border-top-right-radius: 55rpx;
+    background-color: var(--themeColor3);
+  }
+}

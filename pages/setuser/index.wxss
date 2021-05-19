@@ -1,0 +1,25 @@
+.info_warp .info_item {
+  padding: 5px;
+  border-bottom: 1rpx gray;
+  border-radius: 5rpx;
+}
+.info_warp .info_item .info_name {
+  padding-bottom: 5px;
+  font-size: 35rpx;
+  font-family: 宋体;
+}
+.info_warp .info_item input {
+  padding-left: 20rpx;
+  box-sizing: content-box;
+  border: solid 2rpx #999;
+  border-radius: 10rpx;
+  box-shadow: 0 0 2rpx #888;
+  font-size: 30rpx;
+}
+.info_warp .search_result .result_row {
+  margin-left: 20rpx;
+  font-size: 29rpx;
+  border-bottom: solid 1rpx gray;
+  border-radius: 1rpx;
+  border-left: 8rpx solid var(--themeColor2);
+}

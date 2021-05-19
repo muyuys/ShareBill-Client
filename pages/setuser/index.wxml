@@ -1,0 +1,16 @@
+<view class="info_warp">
+<!--     <view class="info_item school">
+        <view class="info_name"> 学校</view>
+        <input focus bindinput="schoolEventFunc"  value="{{school|| ''}}"/>
+    </view>
+    <view class="search_result">
+        <view class="result_row" wx:for="{{schools}}" wx:key="id" bindtap="handleSelectSchool" data-school="{{item}}">{{item.school_name}}</view>
+    </view> -->
+    <view class="info_item contact">
+        <view class="info_name">联系方式</view> 
+        <input bindinput="contactEventFunc" placeholder="请说明联系方式类型,如电话:1234567" value="{{contact||''}}"/>
+    </view>
+</view>
+<button class="btn" bindtap="saveContact">
+保存
+</button>

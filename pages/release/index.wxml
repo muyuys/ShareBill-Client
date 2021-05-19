@@ -1,0 +1,72 @@
+<view class="post-container">
+    <view class="form_item">
+        <!-- 标题 -->
+        <view class="label">拼团名称</view>
+        <view class="form-common-style">
+            <input focus bindinput="titleEventFunc" id="title" class="title input" placeholder="示例：京东洗护199-100求拼单" value="{{title|| ''}}" />
+        </view>
+    </view>
+    <!-- 分类 -->
+    <view class="form_item">
+        <view class="label">拼团类型</view>
+        <picker class="form-common-style" bindchange="bindPickerType" value="{{typeIndex}}" range="{{orderType}}">
+            <view class="input">{{orderType[typeIndex]}}</view>
+        </picker>
+    </view>
+    <!-- 有效期 -->
+    <view class="form_item">
+        <view class="label">截止日期</view>
+        <view class="form-common-style">
+            <view class="datetime_input">
+                <picker class="date" mode="date" start="2021-01-01" end="2100-12-31" bindchange="bindPickerDate" value="{{date}}">
+                    {{date}}
+                </picker>
+                <picker class="time" mode="time" start="00:00" end="23:59" bindchange="bindPickerTime" value="{{time}}">
+                    {{time}}
+                </picker>
+            </view>
+        </view>
+    </view>
+    <!-- 具体优惠形式 -->
+    <view class="form_item">
+        <view class="label">优惠形式</view>
+        <view class="form-common-style">
+            <input bindinput="contentEventFunc" id="content" class="content input" placeholder="示例：199-100；满20起送等" value="{{description || ''}}" />
+        </view>
+    </view>
+    <!-- 活动页面链接 -->
+    <view class="form_item">
+        <view class="label">活动链接</view>
+        <view class="form-common-style">
+            <input bindinput="activityUrlEventFunc" id="url" class="url input" placeholder="可使用分享链接" value="{{activityURL || ''}}" />
+        </view>
+    </view>
+    <!-- 参与人数 -->
+    <view class="form_item">
+        <view class="label">参与人数</view>
+        <view class="form-common-style">
+            <input bindinput="numberEventFunc" type="number" id="number" class="number input" placeholder="包括发布人在内,所以至少为2" value="{{number || ''}}" />
+        </view>
+    </view>
+    <!-- 内容 -->
+    <view class="form_item">
+        <view class="label">备注信息</view>
+        <view class="form-common-style">
+            <input bindinput="descriptionEventFunc" id="description" class="description input" maxlength="150" placeholder="满20元起送，配送费平分" value="{{description || ''}}" />
+        </view>
+    </view>
+    <!-- 照片 -->
+    <view class="form_item">
+        <view class="label">添加图片</view>
+        <view class="form-common-style">
+            <view class="iconfont icon-tianjia add_img" bindtap="handleChooseImg"></view>
+        </view>
+    </view>
+    <view class="up_tool">
+
+        <view class="up_img_item" wx:for="{{chooseImgs}}" wx:key="*this" bindtap="handleRemoveImg" data-index="{{index}}">
+            <UpImg src="{{item}}"></UpImg>
+        </view>
+    </view>
+    <button class="submit" bindtap="formSubmit">立即发布</button>
+</view>
