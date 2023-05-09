@@ -1,0 +1,70 @@
+.post-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.post-container .form_item {
+  flex: 1;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.post-container .form_item .label {
+  flex: 1;
+  height: 30px;
+  font-size: 30rpx;
+  color: white;
+  background-color: var(--themeColor2);
+  line-height: 30px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.post-container .form_item .form-common-style {
+  flex: 3;
+  height: 30px;
+  line-height: 30px;
+  background-color: var(--inputFieldColor);
+  padding-left: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.post-container .form_item .form-common-style .input {
+  height: 30px;
+  width: 100%;
+}
+.post-container .form_item .form-common-style .datetime_input {
+  display: flex;
+}
+.post-container .form_item .form-common-style .datetime_input .date {
+  flex: 1;
+  text-align: center;
+  border-right: 1rpx solid white;
+}
+.post-container .form_item .form-common-style .datetime_input .time {
+  flex: 1;
+  text-align: center;
+}
+.post-container .form_item .form-common-style .add_img {
+  font-size: 22px;
+  margin-right: 20px;
+  float: right;
+  color: var(--themeColor2);
+}
+.post-container .up_tool {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30rpx;
+}
+.post-container .up_tool .up_img_item {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.post-container .submit {
+  padding: 10rpx;
+  background-color: var(--themeColor2);
+  font-size: 15px;
+  border-radius: 50px;
+  color: var(--themeColor3);
+}

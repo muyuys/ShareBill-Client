@@ -1,0 +1,104 @@
+Page {
+  padding-bottom: 90rpx;
+  /* 要与btm_tool同高防止遮挡内容 */
+}
+Page .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: -4rpx;
+}
+Page .wx-swiper-dot {
+  width: 40rpx;
+  display: inline-flex;
+  height: 18rpx;
+  vertical-align: sub;
+  /*垂直对齐文本的下标*/
+}
+Page .wx-swiper-dot::before {
+  content: "";
+  background: #e5e5e5;
+  flex-grow: 1;
+}
+Page .wx-swiper-dot-active::before {
+  content: "";
+  background: rgba(240, 0, 0, 0.8);
+  flex-grow: 1;
+}
+.order_detail_swiper swiper {
+  height: 40vh;
+  text-align: center;
+}
+.order_detail_swiper image {
+  width: 100%;
+}
+.order_info_warp {
+  margin-top: 10px;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.order_info_warp .info_row {
+  flex: 1;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.order_info_warp .info_row .title {
+  flex: 1;
+  height: 35px;
+  line-height: 35px;
+  font-size: 30rpx;
+  color: white;
+  background-color: var(--themeColor2);
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.order_info_warp .info_row .content {
+  flex: 3;
+  height: 35px;
+  line-height: 35px;
+  background-color: var(--inputFieldColor);
+  padding-left: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.btm_tool {
+  border-top: 1rpx solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  display: flex;
+}
+.btm_tool .tool_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.btm_tool .tool_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.btm_tool .btn_pin {
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--themeColor2);
+  color: white;
+  font-size: 40rpx;
+  font-weight: 600;
+}

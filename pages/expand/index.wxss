@@ -1,0 +1,18 @@
+.expands_list {
+  margin-bottom: 20rpx;
+  background-color: var(--themeColor3);
+}
+.expands_list .expand_item {
+  font-size: 35rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.expands_list .carpooling {
+  color: gray;
+}
+.expands_list .flat-share {
+  color: gray;
+}
+.expands_list .other {
+  color: gray;
+}

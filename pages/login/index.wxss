@@ -1,0 +1,16 @@
+.avatar {
+  display: flex;
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-top: 30vh;
+  margin-left: 36vw;
+}
+button {
+  width: 80%;
+  margin-top: 20px;
+  background-color: var(--themeColor2);
+  color: white;
+  border-radius: 98rpx;
+}

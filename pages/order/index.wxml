@@ -1,0 +1,23 @@
+<!-- 订单的列表 -->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <view class="order_main">
+    <navigator url="/pages/order_detail/index?order_id={{item.order_id}}" wx:for="{{orders}}" wx:key="order_id" class="order_item">
+      <view class="item_row id">
+        <view class="text id">订单编号</view>
+        <view class="value id">{{item.order_id}}</view>
+      </view>
+      <view class="item_row type">
+        <view class="text type">订单类型</view>
+        <view class="value type">{{item.type}}</view>
+      </view>
+      <view class="item_row title">
+        <view class="text title">订单标题</view>
+        <view class="value title">{{item.title}}</view>
+      </view>
+      <view class="item_row status">
+        <view class="text status">订单状态</view>
+        <view class="value status">{{item.status}}</view>
+      </view>
+    </navigator>
+  </view>
+</Tabs>

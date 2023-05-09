@@ -1,0 +1,57 @@
+<view class="order_detail_swiper">
+    <swiper autoplay="{{true}}" indicator-dots circular>
+        <swiper-item wx:for="{{orderDetail.pictures}}" wx:key="*this" bindtap="handlePreviewImage" data-url="{{item}}">
+            <image mode="aspectFit" src="{{item}}" />
+        </swiper-item>
+    </swiper>
+</view>
+<view class="order_info_warp">
+    <view class="info_row">
+        <view class="title">拼团名称</view>
+        <view class="content order_title">{{orderDetail.title}}</view>
+    </view>
+    <view class="info_row">
+        <view class="title">截止日期</view>
+        <view class="content order_validity">{{orderDetail.deadline}}</view>
+    </view>
+    <view class="info_row">
+        <view class="title">优惠内容</view>
+        <view class="content order_content">{{orderDetail.content}}</view>
+    </view>
+    <view class="info_row">
+        <view class="title">详细描述</view>
+        <view class="content order_description">{{orderDetail.description}}</view>
+    </view>
+    <view class="info_row" bindtap="textPaste">
+        <view class="title">活动链接</view>
+        <view class="content">{{orderDetail.url}}</view>
+    </view>
+    <view class="info_row">
+        <view class="title">剩余人数</view>
+        <view class="content">{{orderDetail.number}}</view>
+    </view>
+    <view class="info_row">
+        <view class="title">活动状态</view>
+        <view class="content">{{orderDetail.status}}</view>
+    </view>
+    <view class="info_row">
+        <view class="title">拼单校园</view>
+        <view class="content">{{orderDetail.school}}</view>
+    </view>
+</view>
+<view class="btm_tool">
+    <view class="tool_item">
+        <view class="iconfont icon-fenxiang"></view>
+        <view>分享</view>
+        <button open-type="share"></button>
+    </view>
+    <navigator url="/pages/feedback/index?order_id={{orderDetail.order_id}}" class="tool_item">
+        <view class="iconfont icon-jubao"></view>
+        <view>举报</view>
+    </navigator>
+    <view class="tool_item" bindtap="handleCollect">
+        <text class="iconfont {{isCollect?'icon-shoucang2':'icon-shoucang1'}}"></text>
+        <view class="collect_text">收藏</view>
+    </view>
+    <view class="tool_item btn_pin" bindtap="handleParticipate">拼</view>
+</view>

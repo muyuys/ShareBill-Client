@@ -1,0 +1,111 @@
+Page {
+  background-color: var(--themeColor3);
+}
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor1);
+  position: relative;
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 50vh;
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  display: flex;
+  overflow: hidden;
+  height: 180rpx;
+  width: 180rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: var(--themeColor3);
+  font-size: 36rpx;
+  margin-top: 40rpx;
+}
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1rpx solid var(--themeColor3);
+  color: var(--themeColor2);
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.setting {
+  position: fixed;
+  left: 90vw;
+  top: 2vh;
+  color: var(--themeColor2);
+  width: 5vw;
+  height: 5vh;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  color: var(--themeColor0);
+  background-color: var(--themeColor3);
+  border-radius: 5px;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50rpx;
+}
+.user_content .user_main .orders_wrap {
+  background-color: var(--themeColor3);
+  margin-top: 5px;
+}
+.user_content .user_main .orders_wrap .orders_title {
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+  font-size: 35rpx;
+  font-family: 宋体;
+}
+.user_content .user_main .orders_wrap .order_content {
+  display: flex;
+}
+.user_content .user_main .orders_wrap .order_content navigator {
+  padding: 15rpx 0;
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .orders_wrap .order_content navigator .iconfont {
+  color: var(--themeColor2);
+  font-size: 40rpx;
+}
+.user_content .user_main .other_info_wrap {
+  margin-top: 30rpx;
+  background-color: var(--themeColor3);
+}
+.user_content .user_main .other_info_wrap .info_row {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  background-color: var(--themeColor3);
+  font-weight: 500;
+}
+.user_content .user_main .other_info_wrap .info_row .iconfont {
+  color: var(--themeColor2);
+  width: 8%;
+}
+.user_content .user_main .other_info_wrap .info_row .info_name {
+  font-size: 31rpx;
+  padding-left: 5px;
+}

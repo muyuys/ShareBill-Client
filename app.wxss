@@ -1,0 +1,27 @@
+@import "./styles/iconfont.wxss";
+page,view,text,swiper,swiper-item,image,navigator{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+/*
+主题颜色 通过变量实现
+*/
+page{
+  /*定义主题颜色*/
+  --themeColor0:#222831;
+  --themeColor1:#393e46;
+  --themeColor2:rgb(101,206,173);
+  --themeColor3:#ECF5F4;
+  --inputFieldColor:#CAD9D6;
+  --textUnselectedColor:rgb(127,133,133);
+  background-color: #ECF5F4;
+
+  font-size: 28rpx;
+}
+
+image{
+  width: 100%;
+}

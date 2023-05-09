@@ -1,0 +1,118 @@
+Page {
+  background-color: var(--themeColor3);
+}
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor1);
+  position: relative;
+  .user_img_wrap {
+    position: relative;
+    .user_bg {
+      height: 50vh;
+      // 高斯模糊
+      filter: blur(10rpx);
+    }
+    .user_info {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20%;
+      text-align: center;
+      .user_icon {
+        display: flex;
+        overflow: hidden;
+        height: 180rpx;
+        width: 180rpx;
+        border-radius: 50%;
+      }
+      .user_name {
+        color: var(--themeColor3);
+        font-size: 36rpx;
+        margin-top: 40rpx;
+      }
+    }
+  }
+  .user_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    border: 1rpx solid var(--themeColor3);
+    color: var(--themeColor2);
+    font-size: 38rpx;
+    padding: 30rpx;
+    border-radius: 10rpx;
+  }
+}
+
+.setting {
+  position: fixed;
+  left: 90vw;
+  top: 2vh;
+  color: var(--themeColor2);
+  width: 5vw;
+  height: 5vh;
+}
+
+.user_content {
+  position: relative;
+  .user_main {
+    color: var(--themeColor0);
+    background-color: var(--themeColor3);
+    border-radius: 5px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50rpx;
+
+    .orders_wrap {
+      background-color: var(--themeColor3);
+      margin-top: 5px;
+      .orders_title {
+        padding: 20rpx;
+        border-bottom: 2rpx solid #ccc;
+        font-size: 35rpx;
+        font-family: 宋体;
+      }
+      .order_content {
+        display: flex;
+        navigator {
+          padding: 15rpx 0;
+          flex: 1;
+          text-align: center;
+          .iconfont {
+            color: var(--themeColor2);
+            font-size: 40rpx;
+          }
+          .order_name {
+          }
+        }
+      }
+    }
+
+    .other_info_wrap {
+      margin-top: 30rpx;
+      background-color: var(--themeColor3);
+      .info_row {
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        background-color: var(--themeColor3);
+        font-weight: 500;
+        .iconfont {
+          color: var(--themeColor2);
+          width: 8%;
+        }
+        .info_name {
+          font-size: 31rpx;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<view class="expands_list">
+    <!-- TODO使用navigator -->
+    <!--<navigator url="/pages/carpooling/index" class="expand_item">同校拼车</navigator>-->
+<!--     <view class="expand_item carpooling">同校拼车</view>
+    <view class="expand_item flat-share">同校合租</view> -->
+    <view class="expand_item other">敬请期待</view>
+</view>

@@ -1,0 +1,45 @@
+<!-- <view class="location_row" bindtap="getAddress">
+    <view class="iconfont icon-dingwei"></view>
+    <view class="location_name">{{address}}</view>
+</view> -->
+<view class="user_info">
+    <!-- 左侧头像 -->
+    <view class="avatar">
+        <open-data type="userAvatarUrl" lang="en" />
+    </view>
+    <!-- 右侧信息 -->
+    <view class="info">
+        <view class="nickname">
+            Hello~
+            <open-data type="userNickName" lang="en" />
+        </view>
+        <view class="school">
+            <view class="iconfont {{isCertified==true?'icon-renzheng':'icon-weirenzheng'}}"></view>
+            <view class="school_name">{{isCertified==true?school:'未认证'}}</view>
+        </view>
+    </view>
+</view>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <SearchInput></SearchInput>
+    <view wx:if="{{ordersList.length==0}}" class="no_order">暂时没有新的订单哦~~</view>
+    <view wx:else class="order_main">
+        <navigator class="order_item" wx:for="{{ordersList}}" wx:key="order_id" url="/pages/order_detail/index?order_id={{item.order_id}}">
+            <view class="order">
+                <!-- 左侧商品图片 -->
+                <view class="order_img_wrap">
+                    <image mode="scaleToFill" src="{{item.pictures[0]!=None?item.pictures[0]:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" />
+                </view>
+                <!-- 右侧订单信息 -->
+                <view class="order_info_wrap">
+                    <view class="order_id">{{item.order_id}}</view>
+                    <view class="order_title">{{item.title}}</view>
+                    <view class="order_content">{{item.content}}</view>
+                    <view class="school">拼单校园：{{item.school}}</view>
+                    <view class="order_deadline">截止时间：{{item.deadline}}</view>
+                </view>
+            </view>
+            <!-- 底部拼单人 -->
+            <view class="paticipators"></view>
+        </navigator>
+    </view>
+</Tabs>
